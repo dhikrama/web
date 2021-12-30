@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+    content="Mencari tukang bangunan yang bagus? dikrama jasa menyediakan tukang bangunan harian dan borongan. Berpengalaman dan professional terjamin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="scaffolded-by" content="https://github.com/dart-lang/sdk">
+  <title>Dhikrama Jasa</title>
+  <!-- <link rel="preloaded" href=" https://fonts.googleapis.com/css?family=Roboto"> -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="loading"> loading ...</div>
+  <dhikrama-web>
+    <div id="fetching"></div>
+
+    <script>
+      document.onreadystatechange = function () {
+        if (document.readyState === 'complete') {
+            let fetch = document.getElementById("fetching").innerHTML = 'Fetcing data ...';
+        }
+      }
+    </script>
+  </dhikrama-web>
+
+
+  <script>
+    window.onload = function () {
+      let loading = document.getElementById("loading")
+        if (loading) {
+          loading.remove();
+        }
+    }  
+  </script>
+  <script defer src="main.dart.js"></script>
+</body>
+
+</html>

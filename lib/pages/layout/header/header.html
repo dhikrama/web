@@ -1,0 +1,25 @@
+<div id="logo-header">
+    <h1>Logo Header</h1>
+</div>
+<nav #nav>
+    <input type="text" placeholder="Search..">
+    <ul>
+        <li><a (click)="removeClass()" [routerLink]="RoutePaths.home.toUrl()"
+                [routerLinkActive]="'active-route'">Home</a></li>
+        <li><a (click)="removeClass()" [routerLink]="RoutePaths.about.toUrl()"
+                [routerLinkActive]="'active-route'">About</a></li>
+        <li><a (click)="removeClass()" [routerLink]="RoutePaths.contact.toUrl()"
+                [routerLinkActive]="'active-route'">Contact</a></li>
+        <li><a (click)="removeClass()" [routerLink]="RoutePaths.blog.toUrl()"
+                [routerLinkActive]="'active-route'">Blog</a></li>
+    </ul>
+    <div class="auth">
+        <button>Login</button>
+        <button>Register</button>
+    </div>
+</nav>
+<div #hamburger (click)="hamburgert()" class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>

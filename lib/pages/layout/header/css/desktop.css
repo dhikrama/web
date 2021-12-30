@@ -1,0 +1,42 @@
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 5rem;
+}
+
+nav li{
+    font-weight: 400;
+    color: #475569;
+}
+
+nav li{
+    color: #482ff7;
+}
+
+#logo-header {
+    font-weight: 500;
+    color: black;
+}
